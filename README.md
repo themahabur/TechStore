@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TechStore
 
-## Getting Started
+## Project Description
+TechStore is a responsive e-commerce web application built with **Next.js**, **Tailwind CSS**, and **NextAuth.js**.  
+Users can browse products, view product details, and add new products if authenticated. Authentication is securely handled using NextAuth. The app is fully responsive, with a mobile-friendly navbar and smooth navigation.
 
-First, run the development server:
+---
 
+## Live Site
+[View Live Demo](YOUR_VERCEL_LIVE_LINK_HERE)
+
+## GitHub Repository
+[GitHub Repo](YOUR_GITHUB_REPO_LINK_HERE)
+
+---
+
+## Setup & Installation
+
+1. **Clone the repository**
 ```bash
+git clone YOUR_GITHUB_REPO_LINK_HERE
+cd techstore
+Install dependencies
+
+bash
+Copy code
+npm install
+Set up environment variables
+Create a .env.local file at the root and add:
+
+env
+Copy code
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=YOUR_SECRET_KEY
+# Add provider credentials if using Google or other OAuth
+Run the development server
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build & deploy
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+bash
+Copy code
+npm run build
+npm start
+Route Summary
+Route	Description
+/	Home page
+/products	Products listing page
+/AddProduct	Add product page (requires login)
+/login	Login page
+/api/auth/[...nextauth]	Authentication API routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Features
+Responsive Navbar with desktop and mobile views (hamburger menu)
 
-## Learn More
+User authentication using NextAuth.js
 
-To learn more about Next.js, take a look at the following resources:
+Add new products (accessible only to logged-in users)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Mobile-friendly layout and smooth navigation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Tailwind CSS for modern UI styling
 
-## Deploy on Vercel
+Tech Stack
+Next.js – React framework for server-side rendering and routing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tailwind CSS – Utility-first CSS framework for styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+NextAuth.js – Authentication for secure login/logout
+
+Vercel – Hosting and deployment
+
+Screenshots
+Home Page
+
+Products Page
+
+Add Product Page
+
+Contribution
+This project is built as a personal submission. You can fork it and add extra features like:
+
+Product search and filtering
+
+User profile and dashboard
+
+Payment integration
+
+License
+This project is open-source and free to use for learning purposes.
+
+yaml
+Copy code
+
+---
+
+If you want, I can also **create a shorter version** that is specifically **submission-ready for your course or assignment**, keeping it concise but professional.  
+
+Do you want me to do that?
